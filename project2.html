@@ -1,28 +1,15 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<script id="vertex-shader" type="x-shader/x-vertex">
-attribute vec4 vPosition;
-void main()
-{
-gl_Position = vPosition;
-}
-</script>
-<script id="fragment-shader" type="x-shader/x-fragment">
-precision mediump float;
-void main()
-{
-gl_FragColor = vec4( 1.0, 1.0, 1.0, 1.0 );
-}
-</script>
-<script type="text/javascript" src="../Common/webgl-utils.js"></script>
-<script type="text/javascript" src="../Common/initShaders.js"></script>
-<script type="text/javascript" src="../Common/MV.js"></script>
-<script type="text/javascript" src="project1.js"></script>
+  <title>Treehouse Logo in three.js</title>
+  <meta charset="utf-8">
 </head>
-<body>
-<canvas id="gl-canvas" width="512" height="512">
-Oops ... your browser doesn't support the HTML5 canvas element
-</canvas>
+<body style="margin: 0;">
+ 
+  <script src="https://rawgit.com/mrdoob/three.js/master/build/three.min.js"></script>
+  <script src="https://rawgit.com/mrdoob/three.js/master/examples/js/controls/OrbitControls.js"></script>
+  <!-- <script src="build/three.js"></script> -->
+  <script src="project2.js"></script>
+ 
 </body>
 </html>

@@ -1,3 +1,36 @@
-name, date, description
+Jae Hoon Jang, Houchao Gan
+
+Well the original plan for this project was moving Pac-man with 3 different viewpoints.
+
+Later we change our plan with new one, since we can use three.js files. 
+
+Now we can change viewpoint by click and drag.
+we build the cube and 15 balls in the cube.
+There is physics algorithm in the program.
+
+Update function is physics algorithm:
+if ball reached the end of box, it gets bouncing back. 
+depending on the ball's mass after bouncing each other, the two ball has new direction and speed.
+
+==============error in program==============
+there are some error in the graphic.
+some of the balls are started outside or at the box.
+These balls are moving in 2D not 3D in the plane.
+Sometime ball are got out from this error with some bouncing.
+Most of times it slowly pushed outside of cube.
+we try to put the shadow for balls.
+However, the balls' shadow only show in bottom plane.
+not on side.
+this isn't error but unexpected environment texture applied to the ball.
+there is only one light source in program.
+you would see the very bright white spot on ball is specular light from light.
+you also see the very bright colour spot on ball is specular light from wall.
+In addition, when the ball is near to the wall you can see the change of surface of ball.
+only thing we can explain is the ball has environment texture is applied, so the reflection of wall is on the ball.  
+
+============== control in program ===============
+There isn't any interaction for program. 
+only system that can be control by user is viewpoint.
+Click and drag.
 
 be sure to include complete details of how to interact with your application
